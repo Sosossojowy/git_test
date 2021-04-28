@@ -32,7 +32,7 @@
                 document.querySelector(`input[p='km']`).onclick = 
 				document.querySelector(`input[p="cm"]`).onclick = (e)=>{
 					if((x = parseInt(val.value))!==NaN){
-						wyn.innerText = `${x}[m] = ${x/parseInt(e.target.getAttribute("v"))}[${e.target.getAttribute("p")}]`;
+						wyn.innerText = `${x}[m] = ${x*parseFloat(e.target.getAttribute("v"))}[${e.target.getAttribute("p")}]`;
 						return;
 					}
 					alert("Podano niewłaściwą wartość!");
