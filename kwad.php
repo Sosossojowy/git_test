@@ -33,6 +33,7 @@
 			<ul>
 				<li><a href="temp.html">Temperatura</a></li>
 				<li><a href="kwad.php">Kwadraty</a></li>
+				<li><a href="kil.html">Kilometry</a></li>
 			</ul>
 		</div>
 		<div id="prawo">
