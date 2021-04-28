@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tik</title>
+	<script src="./funkcje.js"></script>
+	<link rel="stylesheet" href="main.css?">
+</head>
+<body>
+	<div id="page">
+		<div id="baner">
+			<a href="index.html"><img src="baner.jpg" alt="baner"></a>
+		</div>
+		<div id="lewo">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="temp.html">Temperatura</a></li>
+				<li><a href="kwad.php">Kwadraty</a></li>
+			</ul>
+		</div>
+		<div id="prawo">
+			<input id='temp' type='number'><br>
+			<input onclick="g(0)" type="button" value="Kelwiny">
+			<input onclick="g(1)" type="button" value="Fahrenheity">
+			<p id='Wynik'></p>
+			<script>
+				let ti=document.querySelector("#temp"),wi=document.querySelector("#Wynik"),g = t=>(((!ti.value||isNaN(parseInt(ti.value)))&&((wi.innerText="Błąd danych!"),true))||(t==0?(wi.innerText=`${parseInt(ti.value)+273.15}K`):t==1?(wi.innerText=`${parseInt(ti.value)*1.8+32}F`):alert("Cos poszlo nie tak!")));
+			</script>
+		</div>
+		<div id="empty"></div>
+		<footer>
+			<p style="text-align: center;">
+				<script type="text/javascript">
+					czas();
+				</script>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
