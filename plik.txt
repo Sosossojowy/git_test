@@ -1,1 +1,3 @@
-To jest plik!
+To zmienie plik!
+
+Tutaj dodam tekst!
